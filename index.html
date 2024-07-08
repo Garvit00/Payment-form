@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="/successful.html" method="post">
+            <h1>Payment Form</h1>
+            <h3 style="color:rgba(221, 32, 32, 0.822)">Required fields are followed by *</h3>
+            <h2 style="text-decoration: underline;">User information</h2>
+            <p> Name:* <input type="text" name="name" Required placeholder="Rahul Sharma"></p>
+            <fieldset>
+                <legend>Gender *</legend>
+                <p>
+                    Male <input type="radio" name="gender" id="male"> Female <input type="radio" name="gender" id="female" Required>
+                </p>
+            </fieldset>
+            <p> Address: * <textarea style="background-color: antiquewhite;" name="address" id="address" cols="50" rows="5" Required placeholder="2341/B Rohini New Delhi"></textarea></p>
+            <p>Area Pincode: * <input type="number" name="code" id="code" Required placeholder="123456"></p>
+            <p>Mobile Number: * <input type="number" name="phone" id="phone" Required placeholder="1234567890"></p>
+            <p>Email ID: <input type="email" name="email" id="email" placeholder="rahul@gmail.com"></p>
+            <h2 style="text-decoration: underline;">Payment Details</h2>
+            <p>Card Type:
+                <select name="card" id="card">
+            <option value="">-------select a card type------</option>
+            <option value="Visa">Visa</option>
+            <option value="Rupay">Rupay</option>
+            <option value="Mastercard">mastercard</option>
+            </select>
+            </p>
+            <img class="cardt" src="https://thecuriouspoint.com/wp-content/uploads/2020/09/Screenshot_2020-09-16-What-is-the-difference-between-RuPay-Card-VISA-Card-and-MasterCard-.png" alt="">
+            <p>Card Holder Name: <input type="text" name="cardname" id="cardname" placeholder="Rahul Sharma"></p>
+            <p>Card Number: <input type="number" name="cardn" id="cardn" placeholder="1111-2222-3333-4444"></p>
+            <p>Expiration Date: <input type="date" name="cardd" id="cardd"></p>
+            <p>CVV: <input type="password" name="cardp" id="cardp" placeholder="123"></p>
+
+            <p><input type="submit" value="Pay Now"></p>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+h1 {
+    color: royalblue;
+    background-color: goldenrod;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    padding: 30px;
+}
+
+input[type="text"],
+textarea,
+input[type="number"],
+input[type="email"],
+input[type="password"],
+input[type="Date"] {
+    background-color: antiquewhite;
+    width: 95%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 10px;
+}
+
+.container {
+    margin: 20px, 30px;
+    background-color: rgb(211, 206, 206);
+    padding: 15px;
+}
+
+fieldset {
+    background-color: antiquewhite;
+    border: 1px soild black;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    font-size: 20px;
+    background-color: green;
+    text-align: center;
+    width: 95%;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+input[type=submit]:hover {
+    color: green;
+    background-color: greenyellow;
+}
+
+select {
+    background-color: rgb(116, 111, 111);
+    text-align: justify;
+    color: aqua;
+}
+
+@media screen and (min-width: 1008px) {
+    .cardt {
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 1007px) and (min-width: 641px) {
+    .cardt {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 640px) and (min-width:200px) {
+    .cardt {
+        width: 30%;
+    }
+}
